@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+@theme{
+
+    --color-background:#FFF8F7;
+    --color-interbackground:#825158;
+    --color-text:#514345;
+}
+
+@utility flexCol{
+    @apply flex flex-col  items-center;
+}
