@@ -6,16 +6,39 @@
     --color-interbackground:#825158;
     --color-text:#514345;
     --font-Garamond:"Cormorant Garamond";
+    --breakpoint-xs:322px;
+    --breakpoint-xxs:238px;
    
 }
 @layer base{
     h1{
-        font-size: 1.255rem;
+        font-size: 2.5rem;
         line-height: 1.75rem;
+        font-weight: 650;
+    
+   
+    @variant max-md{
+        font-size:2rem;
+        font-weight: 600;
+
+    }
+    @variant max-xs{
+        font-size:1.7rem;
         font-weight: 700;
+        
     }
 }
+p{
+    @variant max-md{
+        font-size :0.813rem;
+    }
+    @variant max-xs{
+        font-size :0.625rem;
+    }
 
+}
+}
 @utility flexCol{
     @apply flex flex-col  items-center;
+   
 }
