@@ -5,6 +5,15 @@
     --color-background:#FFF8F7;
     --color-interbackground:#825158;
     --color-text:#514345;
+    --font-Garamond:"Cormorant Garamond";
+   
+}
+@layer base{
+    h1{
+        font-size: 1.255rem;
+        line-height: 1.75rem;
+        font-weight: 700;
+    }
 }
 
 @utility flexCol{
