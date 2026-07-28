@@ -6,8 +6,9 @@
     --color-interbackground:#825158;
     --color-text:#514345;
     --font-Garamond:"Cormorant Garamond";
-    --breakpoint-xs:322px;
+    --breakpoint-xs:340px;
     --breakpoint-xxs:238px;
+    --color-borderColor:#D89CA4;
    
 }
 @layer base{
@@ -28,12 +29,26 @@
         
     }
 }
-p{
-    @variant max-md{
-        font-size :0.813rem;
+
+button{
+    padding: 16px 122.5px 16px 153.5px;
+    border-radius: 16px;
+    cursor: pointer;
+    border:solid ;
+    border-width: 1px;
+   
+    @variant max-sm{
+padding: 10px 80px 10px 110px;
+ font-size: 0.713rem;
+ font-weight:400;
     }
     @variant max-xs{
-        font-size :0.625rem;
+        padding: 10px 50px 10px 70px;
+        font-size: 0.6rem;
+    }
+    @variant max-xxs{
+padding: 10px 30px 10px 50px;
+        font-size: 0.5rem;
     }
 
 }
