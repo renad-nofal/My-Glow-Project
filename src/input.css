@@ -9,6 +9,7 @@
     --breakpoint-xs:340px;
     --breakpoint-xxs:238px;
     --color-borderColor:#D89CA4;
+    --font-Inter:"Inter";
    
 }
 @layer base{
@@ -31,27 +32,49 @@
 }
 
 button{
-    padding: 16px 122.5px 16px 153.5px;
+    width:440px;
+    padding :14px 0;
     border-radius: 16px;
     cursor: pointer;
     border:solid ;
     border-width: 1px;
+    gap:5px;
+    align-items: center;
+    
    
     @variant max-sm{
-padding: 10px 80px 10px 110px;
+
  font-size: 0.713rem;
  font-weight:400;
     }
     @variant max-xs{
-        padding: 10px 50px 10px 70px;
+        
         font-size: 0.6rem;
     }
     @variant max-xxs{
-padding: 10px 30px 10px 50px;
+
         font-size: 0.5rem;
     }
+    
 
 }
+input{
+       width:440px;
+      
+       padding: 14px 15px;
+    border-radius: 16px;
+    cursor: pointer;
+    border:solid ;
+    border-width: 1px; 
+    border-color:rgb(177, 173, 173);
+   
+    color:dimgrey;
+    background-color:#FFFFFF;
+}
+    label{
+        
+        font-size: 15px;
+    }
 }
 @utility flexCol{
     @apply flex flex-col  items-center;
