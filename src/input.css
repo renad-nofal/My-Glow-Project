@@ -78,3 +78,6 @@ button{
 @utility inputprop{
     @apply w-110 py-3.5 px-3.75 rounded-2xl cursor-pointer max-sm:py-3 max-sm:w-85 border-1 border-stone-300 text-olive-600 bg-gray-50;
 }
+@utility row{
+    @apply flex gap-6 ;
+}
