@@ -13,6 +13,14 @@
    
 }
 @layer base{
+    body{
+       
+
+        color:#514345;
+        font-family: var( --font-Inter);
+        background-color:var(--color-background) ;
+        width: 100%;
+    }
     h1{
         font-size: 2.5rem;
         line-height: 1.75rem;
@@ -32,14 +40,7 @@
 }
 
 button{
-    width:440px;
-    padding :14px 0;
-    border-radius: 16px;
-    cursor: pointer;
-    border:solid ;
-    border-width: 1px;
-    gap:5px;
-    align-items: center;
+   
     
    
     @variant max-sm{
@@ -50,27 +51,18 @@ button{
     @variant max-xs{
         
         font-size: 0.6rem;
+        font-weight:500;
     }
     @variant max-xxs{
 
         font-size: 0.5rem;
+        font-weight:600;
     }
     
 
 }
-input{
-       width:440px;
-      
-       padding: 14px 15px;
-    border-radius: 16px;
-    cursor: pointer;
-    border:solid ;
-    border-width: 1px; 
-    border-color:rgb(177, 173, 173);
-   
-    color:dimgrey;
-    background-color:#FFFFFF;
-}
+    
+
     label{
         
         font-size: 15px;
@@ -79,4 +71,10 @@ input{
 @utility flexCol{
     @apply flex flex-col  items-center;
    
+}
+@utility buttonWid{
+    @apply flex items-center hover:scale-75 justify-center w-110 py-3.5 rounded-2xl cursor-pointer max-sm:w-85  ;
+}
+@utility inputprop{
+    @apply w-110 py-3.5 px-3.75 rounded-2xl cursor-pointer max-sm:py-3 max-sm:w-85 border-1 border-stone-300 text-olive-600 bg-gray-50;
 }
