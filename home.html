@@ -6,30 +6,34 @@
     <title>Home</title>
     <link rel="stylesheet" href="./src/output.css"/>
 </head>
-<body>
-    <div class= "bg-white text-text">
+<body class=" text-text">
+    <div class= "bg-white">
     <header class="container mx-auto flex justify-between items-center">
-        <div class="logo">
+        <div class="sm:hidden"><a href="#"><img src="./images/iconsForHeader/iconForMopile.svg"/> </a> </div>
+        <div class="logo max-sm:w-24 max-sm:ml-5 max-xs:w-20">
             <img src="./images/logo/logo.webp"/>
         </div>
         <nav >
-            <ul class="row">
+            <ul class="row max-sm:hidden">
                 <li><a href="./home.html">Home</a></li>
-                <li><a href="#">Shop</a></li>
+                <li ><a href="#">Shop</a></li>
                 <li><a href="#">Categories</a></li>
                 <li><a href="#">About</a></li>
             </ul>
         </nav>
         <nav>
             <ul class="row">
-                <li><a href="#"><img src="./images/iconsForHeader/search.svg"/></a></li>
-                <li><a href="#"><img src="./images/iconsForHeader/love.svg"/></a></li>
-                <li><a href="#"><img src="./images/iconsForHeader/shopIcon.svg"/></a></li>
-                <li><a href="#"><img src="./images/iconsForHeader/personalDetails.svg"/></a></li>
+                <li ><a href="#"><img src="./images/iconsForHeader/search.svg"/></a></li>
+                <li class="max-sm:hidden"><a href="#"><img src="./images/iconsForHeader/love.svg"/></a></li>
+                <li class="max-sm:hidden"><a href="#"><img src="./images/iconsForHeader/shopIcon.svg"/></a></li>
+                <li class="max-sm:hidden"><a href="#"><img src="./images/iconsForHeader/personalDetails.svg"/></a></li>
             </ul>
         </nav>
-
+   
     </header>
+
     </div>
+
+
 </body>
 </html>
