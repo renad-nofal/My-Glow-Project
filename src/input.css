@@ -5,24 +5,25 @@
     --color-background:#FFF8F7;
     --color-interbackground:#825158;
     --color-text:#514345;
-    --color-typesOfItems:#D89CA4;
+   
 
     --font-Garamond:"Cormorant Garamond";
     --breakpoint-xs:340px;
+    
     --breakpoint-xxs:238px;
+
     --color-borderColor:#D89CA4;
     --font-Inter:"Inter";
    
 }
 @layer base{
     body{
-       
-
-       
+    
         font-family: var( --font-Inter);
         background-color:var(--color-background) ;
         width: 100%;
     }
+    
     h1{
         font-size: 2.5rem;
         line-height: 1.75rem;
@@ -39,11 +40,11 @@
         font-weight: 700;
         
     }
+    
 }
 
+
 button{
-   
-    
    
     @variant max-sm{
 
@@ -69,6 +70,10 @@ button{
         
         font-size: 15px;
     }
+    .container{
+        @apply mx-auto;
+        
+    }
 }
 @utility flexCol{
     @apply flex flex-col  items-center;
@@ -82,4 +87,8 @@ button{
 }
 @utility row{
     @apply flex gap-6 ;
+}
+@utility typesOfItems{
+    @apply w-20 h-20 rounded-full max-sm:w-16 max-sm:h-16;
+
 }
