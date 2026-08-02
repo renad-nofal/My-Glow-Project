@@ -73,6 +73,7 @@ button{
     .container{
         @apply mx-auto;
         
+        
     }
 }
 @utility flexCol{
@@ -91,4 +92,18 @@ button{
 @utility typesOfItems{
     @apply w-20 h-20 rounded-full max-sm:w-16 max-sm:h-16;
 
+}
+@utility widthOfproducts{
+    @apply w-8;
+
+    @variant{
+
+    }
+     @variant md{
+    @apply w-44;
+   }
+    @variant lg{
+   @apply w-56;
+   }
+  
 }
