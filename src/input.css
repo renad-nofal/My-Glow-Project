@@ -96,9 +96,7 @@ button{
 @utility widthOfproducts{
     @apply w-8;
 
-    @variant{
-
-    }
+   
      @variant md{
     @apply w-44;
    }
