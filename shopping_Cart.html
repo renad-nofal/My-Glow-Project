@@ -53,9 +53,9 @@
         <div class="container">
     <h1 class="text-interbackground font-Noto italic font-bold">Your Shopping Bag</h1>
 
-    <div class="grid grid-cols-[1fr_368px] mt-9 gap-10 ">
+    <div class="grid grid-cols-[1fr_368px] mt-9 gap-10 max-xl:grid-cols-[2fr_1fr] max-lg:grid-cols-1">
         <div class="flex flex-col gap-4">
-        <div class="grid grid-cols-[364px_1fr_1fr_1fr] pb-3 border-b-1 border-b-interbackground">
+        <div class="max-md:hidden grid grid-cols-[364px_1fr_1fr_1fr] pb-3 border-b-1 border-taupe-300">
         <h3>Product</h3>
         <h3>Price</h3>
         <h3>Quantity</h3>
@@ -64,37 +64,37 @@
         <div class="grid grid-cols-[364px_1fr_1fr_1fr] items-center bg-white py-4 px-4 rounded-3xl">
             <div class="flex gap-3 ">
            <img src="./images/ImagesOfProduct/serum.webp" class="w-20 rounded-2xl"/>
-           <div class="flex flex-col"><h2 class="font-bold font-Playfair text-[25px] text-black">Velvet Rose Cleansing Balm</h2>
+           <div class="flex flex-col"><h2 class="font-bold font-Playfair text-[18px] text-black">Velvet Rose Cleansing Balm</h2>
             <button class="text-interbackground text-[13px] cursor-pointer hover:scale-105 transition-all">remove</button>
            </div>
             </div>
             <h3>$42.00</h3>
            
-            <h3 class="flex gap-5"><span>-</span>  1  <span>+</span></h3>
+            <h3 class="flex gap-5 max-md:hidden"><span>-</span>  1  <span>+</span></h3>
             
-            <h3 class="text-interbackground font-bold">$42.00</h3>
+            <h3 class="text-interbackground font-bold max-md:hidden">$42.00</h3>
 
         </div>
 
         <div class="grid grid-cols-[364px_1fr_1fr_1fr] items-center bg-white py-4 px-4 rounded-3xl">
             <div class="flex gap-3 ">
            <img src="./images/itemsInshopPage/cream2.webp" class="w-20 rounded-2xl"/>
-         <div class="flex flex-col ">  <h2 class="font-bold font-Playfair text-[25px] text-black">Night Repair Cream</h2>
+         <div class="flex flex-col ">  <h2 class="font-bold font-Playfair text-[18px] text-black">Night Repair Cream</h2>
                  <button class="text-interbackground mt-12 ml-10 text-[13px] cursor-pointer hover:scale-105 transition-all">remove</button>
            </div>
             </div>
             <h3>$98.00</h3>
            
-            <h3 class="flex gap-5"><span>-</span>  1  <span>+</span></h3>
+            <h3 class="flex gap-5 max-md:hidden"><span>-</span>  1  <span>+</span></h3>
             
-            <h3 class="text-interbackground font-bold">$98.00</h3>
+            <h3 class="text-interbackground font-bold max-md:hidden">$98.00</h3>
 
         </div>
 
         </div>
         <div class="p-8 bg-white rounded-3xl flex flex-col">
-            <h2 class="pb-4 text-2xl text-interbackground font-Noto font-semibold border-b border-interbackground">Order Summary</h2>
-            <div class="mt-4 flex pb-4 flex-col gap-3 border-b border-interbackground">
+            <h2 class="pb-4 text-2xl text-interbackground font-Noto font-semibold border-b border-taupe-300">Order Summary</h2>
+            <div class="mt-4 flex pb-4 flex-col gap-3 border-b border-taupe-300">
                 <div class="flex justify-between">
                     <h3>Subtotal</h3>
                     <h3>$110.00</h3>
@@ -113,7 +113,21 @@
                     <h3>$9.35</h3>
                 </div>
             </div>
-  
+            <div class="flex justify-between text-black mt-4 mb-8">
+                <h3 class="font-bold">Total</h3>
+                <h3 class="font-bold">$119.35</h3>
+
+            </div>
+
+            <div>
+                <p class="text-[13px]">Have a promo code?</p>
+            </div>
+            <div class="grid grid-cols-[2fr_1fr] gap-1">
+            <input class="border-taupe-300 border rounded-3xl p-1"/>
+            <button class="border-interbackground transition-all cursor-pointer hover:scale-90 border rounded-3xl p-1">Apply</button>
+            </div>
+            <button class="transition-all cursor-pointer hover:scale-90 bg-interbackground text-white w-70 max-md:w-60 p-4 rounded-3xl mt-4">SECURE CHECKOUT</button>
+             <p class="text-[13px] mt-8 flex justify-center">We accept all major payment methods</p>
         </div>
 
        
