@@ -5,9 +5,125 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <title>Document</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./src/output.css"/>
 </head>
-<body >
+<body>
+    <div class= "bg-white py-3">
+    <header class="container mx-auto flex justify-between items-center">
+        <div class="sm:hidden"><a href="#"><img src="./images/iconsForHeader/iconForMopile.svg"/> </a> </div>
+        <div class="logo max-sm:w-24 max-sm:ml-5 max-xs:w-20">
+            <img src="./images/logo/logo.webp"/>
+        </div>
+        <nav >
+            <ul class="row max-sm:hidden">
+                <li><a href="./home.html" >Home</a></li>
+                <li ><a href="./shop.html">Shop</a></li>
+                <li><a href="#">Categories</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+        <nav>
+            <ul class="row">
+                <li ><a href="#"><img src="./images/iconsForHeader/search.svg"/></a></li>
+                <li class="max-sm:hidden"><a href="#"><img src="./images/iconsForHeader/love.svg"/></a></li>
+                <li class="max-sm:hidden"><a href="./shopping_Cart.html"><img src="./images/iconsForHeader/shopIcon.svg"/></a></li>
+                <li class="max-sm:hidden border-b-2 pb-1 border-interbackground"><a href="./User_Profile.html"><img src="./images/iconsForHeader/personalDetails.svg"/></a></li>
+            </ul>
+        </nav>
+   
+    </header>
+
+    </div>
+    <section class="container grid grid-cols-[256px_1fr] mt-12 ">
+        <div class="bg-white rounded-2xl flexCol">
+         <div class="flexCol mt-6 ">
+            <div class="relative">
+            <img src="./images/person/pexels-aksioart-3765541.webp" class="w-28 h-28 rounded-full border border-[5px] border-interbackground" />
+           <button > <img src="./images/person/Button (3).svg" class="cursor-pointer absolute bottom-0 right-0 hover:scale-105 "/>
+</button>
+        </div>
+<h2 class="font-bold text-black text-3xl font-Garamond">Elena Rossi</h2>
+
+         </div> 
+         
+         <div class="mt-8  flexCol gap-4">
+            <div class="flex gap-4 bg-background rounded-3xl py-3 px-3">
+            <img src="./images/iconsForHeader/personalDetails.svg"/>
+            <p class="text-interbackground font-semibold">Personal Info</p>
+            </div>
+
+            <div class="flex gap-4 ">
+            <img src="./images/iconsForFooter/cart.svg"/>
+            <p class="text-interbackground font-semibold">Order History</p>
+            </div>
+
+            <div class="flex gap-4 ">
+            <img src="./images/iconsForFooter/cart.svg"/>
+            <p class="text-interbackground font-semibold">Order History</p>
+            </div>
+
+            <div class="flex gap-4 ">
+            <img src="./images/iconsForFooter/cart.svg"/>
+            <p class="text-interbackground font-semibold">Order History</p>
+            </div>
+             
+            
+
+         </div>
+
+    
+        </div>
+         <div>
+          
+         </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer class=" bg-white py-3 px-1 mt-10">
+<div class="container sm:hidden fixd bottom-0 flex justify-between  bg-white">
+    <a href="./home.html" class="flex flex-col items-center">
+        <img src="./images/iconsForFooter/Home.svg"/>
+        <p class="text-[9px]">Home</p>
+    </a>
+     <a href="./shop.html" class="flex flex-col items-center">
+        <img src="./images/iconsForHeader/shopIcon.svg"/>
+        <p class="text-[9px]">Shop</p>
+    </a>
+     <a href="#" class="flex flex-col items-center">
+        <img src="./images/iconsForHeader/love.svg"/>
+        <p class="text-[9px]">Wishlist</p>
+    </a>
+     <a href="./shopping_Cart.html" class="flex flex-col items-center">
+        <img src="./images/iconsForFooter/cart.svg"/>
+        <p class="text-[9px]">Cart</p>
+    </a>
+     <a href="#" class="flex flex-col items-center">
+        <img src="./images/iconsForHeader/personalDetails.svg"/>
+        <p class="text-[9px]">Profile</p>
+    </a>
+    
+
+</div>
+    </footer>
+
     
 </body>
 </html>
