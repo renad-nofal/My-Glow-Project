@@ -37,7 +37,7 @@
     </header>
 
     </div>
-    <section class="container grid grid-cols-[256px_1fr] mt-12 ">
+    <section class="container grid grid-cols-[256px_1fr] mt-12 gap-5">
         <div class="bg-white rounded-2xl ">
          <div class="flexCol mt-6">
             <div class="relative">
@@ -45,7 +45,7 @@
            <button > <img src="./images/person/Button (3).svg" class="cursor-pointer absolute bottom-0 right-0 hover:scale-105 "/>
 </button>
         </div>
-<h2 class="font-bold text-black text-3xl font-Garamond">Elena Rossi</h2>
+<h2 class="font-bold text-black text-2xl font-Garamond">Elena Rossi</h2>
 
          </div> 
          
@@ -82,8 +82,65 @@
 
     
         </div>
+         
          <div>
-          
+            <div class="bg-white p-10 rounded-2xl flex flex-col">
+                <h1 class="text-black text-3xl font-Garamond ">Personal Information</h1>
+                <p class="text-[15px]">Manage your account details and security settings here.</p>
+
+
+                <form>
+                <div class="mt-8 grid grid-cols-2 gap-5 border-b border-taupe-300 pb-10">
+                    <div class="flex flex-col">
+                        <label for="fullName">Full Name</label>
+                        <input id="fullName" placeholder="Elena Rossi" class="border border-taupe-300 py-[12.5px] px-4 rounded-2xl"/>
+                    </div>
+
+
+                    <div class="flex flex-col">
+                        <label for="fullName">Email Address</label>
+                        <input id="fullName" placeholder="elena.rossi@luxury.com" class="border border-taupe-300 py-[12.5px] px-4 rounded-2xl"/>
+                    </div>
+
+                    <div class="flex flex-col">
+                        <label for="fullName">Phone Number</label>
+                        <input id="fullName" placeholder="+1 (555) 000-0000" class="border border-taupe-300 py-[12.5px] px-4 rounded-2xl"/>
+                    </div>
+
+                    <div class="flex flex-col">
+                        <label for="fullName">Birth Date</label>
+                        <input id="fullName" placeholder="mm/dd/yyyy" class="border border-taupe-300 py-[12.5px] px-4 rounded-2xl"/>
+                    </div>
+                </div>
+
+            </form>
+
+            <h3 class="font-Garamond text-2xl text-black font-black mt-8">
+                Security
+            </h3>
+            <form class="grid grid-cols-2 gap-5  mt-8 mb-8">
+                <div class="flex flex-col">
+                        <label for="fullName">Current Password</label>
+                        <input id="fullName" placeholder="••••••••" class="border border-taupe-300 py-[12.5px] px-4 rounded-2xl"/>
+                    </div>
+
+                    <div class="flex flex-col">
+                        <label for="fullName">New Password</label>
+                        <input id="fullName" placeholder="Min. 8 characters" class="border border-taupe-300 py-[12.5px] px-4 rounded-2xl"/>
+                    </div>
+
+            </form>
+            <div class="flex justify-end gap-5">
+            <button class="border-interbackground border w-24 rounded-3xl py-2 px-5 hover:scale-95 cursor-pointer">Cancel</button>
+            <button class="border-interbackground border bg-interbackground w-40 rounded-3xl py-2 px-5 text-background hover:scale-95 cursor-pointer">Save Changes</button>
+           
+        
+        </div>
+        
+        </div>
+            
+     
+
          </div>
     </section>
 
