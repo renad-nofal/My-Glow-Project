@@ -37,7 +37,7 @@
     </header>
 
     </div>
-    <section class="container grid grid-cols-[256px_1fr] mt-12 gap-5 items-start">
+    <section class="container grid grid-cols-[256px_1fr] mt-12 gap-5 items-start max-med:grid-cols-1">
         <div class="bg-white rounded-2xl ">
          <div class="flexCol mt-6">
             <div class="relative">
@@ -83,7 +83,7 @@
     
         </div>
          
-         <div>
+         <div class="max-sm:hidden">
             <div class="bg-white p-10 rounded-2xl flex flex-col">
                 <h1 class="text-black text-3xl font-Garamond ">Personal Information</h1>
                 <p class="text-[15px]">Manage your account details and security settings here.</p>
@@ -91,7 +91,7 @@
 
                 <form>
                 <div class="mt-8 grid grid-cols-2 gap-5 border-b border-taupe-300 pb-10">
-                    <div class="flex flex-col">
+                    <div class="flex flex-col ">
                         <label for="fullName">Full Name</label>
                         <input id="fullName" placeholder="Elena Rossi" class="border border-taupe-300 py-[12.5px] px-4 rounded-2xl"/>
                     </div>
