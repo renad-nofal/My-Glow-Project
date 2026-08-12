@@ -591,6 +591,9 @@
   .bg-\[\#F9DBDE\] {
     background-color: #F9DBDE;
   }
+  .bg-\[\#f0c2c7\] {
+    background-color: #f0c2c7;
+  }
   .bg-\[\#fdf1f1\] {
     background-color: #fdf1f1;
   }
@@ -851,6 +854,9 @@
     .hover\:bg-white:hover {
       background-color: var(--color-white);
     }
+    .hover\:text-borderColor:hover {
+      color: var(--color-borderColor);
+    }
     .hover\:text-fuchsia-300:hover {
       color: var(--color-fuchsia-300);
     }
@@ -860,6 +866,19 @@
     .hover\:text-white:hover {
       color: var(--color-white);
     }
+  }
+  .focus\:scale-75:focus {
+    --tw-scale-x: 75%;
+    --tw-scale-y: 75%;
+    --tw-scale-z: 75%;
+    scale: var(--tw-scale-x) var(--tw-scale-y);
+  }
+  .focus\:border:focus {
+    border-style: var(--tw-border-style);
+    border-width: 1px;
+  }
+  .focus\:border-b-interbackground:focus {
+    border-bottom-color: var(--color-interbackground);
   }
   @media (width < 428px) {
     .max-cartXs\:hidden {
