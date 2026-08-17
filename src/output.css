@@ -196,6 +196,9 @@
   }
 }
 @layer utilities {
+  .visible {
+    visibility: visible;
+  }
   .absolute {
     position: absolute;
   }
@@ -389,6 +392,12 @@
   .h-28 {
     height: calc(var(--spacing) * 28);
   }
+  .h-32 {
+    height: calc(var(--spacing) * 32);
+  }
+  .h-80 {
+    height: calc(var(--spacing) * 80);
+  }
   .inputprop {
     width: calc(var(--spacing) * 110);
     cursor: pointer;
@@ -425,6 +434,9 @@
   .w-28 {
     width: calc(var(--spacing) * 28);
   }
+  .w-32 {
+    width: calc(var(--spacing) * 32);
+  }
   .w-40 {
     width: calc(var(--spacing) * 40);
   }
@@ -442,6 +454,9 @@
   }
   .w-70 {
     width: calc(var(--spacing) * 70);
+  }
+  .w-80 {
+    width: calc(var(--spacing) * 80);
   }
   .w-full {
     width: 100%;
@@ -463,6 +478,9 @@
   }
   .grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
   .grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -589,8 +607,14 @@
   .border-b-taupe-300 {
     border-bottom-color: var(--color-taupe-300);
   }
+  .bg-\[\#F7D8DB\] {
+    background-color: #F7D8DB;
+  }
   .bg-\[\#F9DBDE\] {
     background-color: #F9DBDE;
+  }
+  .bg-\[\#\] {
+    background-color: #;
   }
   .bg-\[\#f0c2c7\] {
     background-color: #f0c2c7;
@@ -646,6 +670,12 @@
   .px-10 {
     padding-inline: calc(var(--spacing) * 10);
   }
+  .px-11 {
+    padding-inline: calc(var(--spacing) * 11);
+  }
+  .px-\[44px\] {
+    padding-inline: 44px;
+  }
   .py-2 {
     padding-block: calc(var(--spacing) * 2);
   }
@@ -655,11 +685,23 @@
   .py-4 {
     padding-block: calc(var(--spacing) * 4);
   }
+  .py-9 {
+    padding-block: calc(var(--spacing) * 9);
+  }
   .py-\[12\.5px\] {
     padding-block: 12.5px;
   }
   .pt-4 {
     padding-top: calc(var(--spacing) * 4);
+  }
+  .pt-8 {
+    padding-top: calc(var(--spacing) * 8);
+  }
+  .pt-10 {
+    padding-top: calc(var(--spacing) * 10);
+  }
+  .pt-12 {
+    padding-top: calc(var(--spacing) * 12);
   }
   .pb-1 {
     padding-bottom: var(--spacing);
