@@ -8,6 +8,7 @@
       "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-red-100: oklch(93.6% 0.032 17.717);
     --color-amber-50: oklch(98.7% 0.022 95.277);
     --color-green-300: oklch(87.1% 0.15 154.449);
     --color-pink-700: oklch(52.5% 0.223 3.958);
@@ -33,6 +34,7 @@
     --radius-2xl: 1rem;
     --radius-3xl: 1.5rem;
     --radius-4xl: 2rem;
+    --blur-xs: 4px;
     --default-transition-duration: 150ms;
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     --default-font-family: var(--font-sans);
@@ -533,12 +535,6 @@
   .gap-48 {
     gap: calc(var(--spacing) * 48);
   }
-  .gap-\[24\] {
-    gap: 24;
-  }
-  .gap-\[24px\] {
-    gap: 24px;
-  }
   .rounded-2xl {
     border-radius: var(--radius-2xl);
   }
@@ -667,9 +663,6 @@
   .py-4 {
     padding-block: calc(var(--spacing) * 4);
   }
-  .py-5 {
-    padding-block: calc(var(--spacing) * 5);
-  }
   .py-9 {
     padding-block: calc(var(--spacing) * 9);
   }
@@ -681,9 +674,6 @@
   }
   .py-\[12\.5px\] {
     padding-block: 12.5px;
-  }
-  .py-\[80px\] {
-    padding-block: 80px;
   }
   .pt-4 {
     padding-top: calc(var(--spacing) * 4);
@@ -830,6 +820,10 @@
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
     transition-duration: var(--tw-duration, var(--default-transition-duration));
   }
+  .duration-1 {
+    --tw-duration: 1ms;
+    transition-duration: 1ms;
+  }
   .duration-100 {
     --tw-duration: 100ms;
     transition-duration: 100ms;
@@ -847,6 +841,12 @@
     transition-duration: 300ms;
   }
   @media (hover: hover) {
+    .hover\:scale-10:hover {
+      --tw-scale-x: 10%;
+      --tw-scale-y: 10%;
+      --tw-scale-z: 10%;
+      scale: var(--tw-scale-x) var(--tw-scale-y);
+    }
     .hover\:scale-75:hover {
       --tw-scale-x: 75%;
       --tw-scale-y: 75%;
@@ -871,14 +871,33 @@
       --tw-scale-z: 105%;
       scale: var(--tw-scale-x) var(--tw-scale-y);
     }
+    .hover\:scale-\[1\.\]:hover {
+      scale: 1.;
+    }
+    .hover\:scale-\[101\%\]:hover {
+      scale: 101%;
+    }
+    .hover\:scale-\[101\]:hover {
+      scale: 101;
+    }
     .hover\:bg-borderColor:hover {
       background-color: var(--color-borderColor);
+    }
+    .hover\:bg-interbackground:hover {
+      background-color: var(--color-interbackground);
+    }
+    .hover\:bg-red-100:hover {
+      background-color: var(--color-red-100);
     }
     .hover\:text-borderColor:hover {
       color: var(--color-borderColor);
     }
     .hover\:text-interbackground:hover {
       color: var(--color-interbackground);
+    }
+    .hover\:blur-xs:hover {
+      --tw-blur: blur(var(--blur-xs));
+      filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
     }
   }
   @media (width < 882px) {
