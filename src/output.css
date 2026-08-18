@@ -309,6 +309,12 @@
   .mt-24 {
     margin-top: calc(var(--spacing) * 24);
   }
+  .mt-28 {
+    margin-top: calc(var(--spacing) * 28);
+  }
+  .mt-40 {
+    margin-top: calc(var(--spacing) * 40);
+  }
   .mt-60 {
     margin-top: calc(var(--spacing) * 60);
   }
@@ -1129,6 +1135,9 @@
     .max-sm\:font-normal {
       --tw-font-weight: var(--font-weight-normal);
       font-weight: var(--font-weight-normal);
+    }
+    .max-sm\:text-text {
+      color: var(--color-text);
     }
   }
   @media (width >= 238px) {
