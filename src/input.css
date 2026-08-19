@@ -115,3 +115,9 @@ button{
    }
   
 }
+@utility fontSizeForFooter{
+    @apply text-[13px] font-medium max-sm:text-[9px];
+}
+@utility footerhidden{
+    @apply max-cartXs:hidden;
+}
