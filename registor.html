@@ -11,47 +11,57 @@
     <link rel="stylesheet" href="./src/output.css"/>
 </head>
 <body>
-    <section class="flex">
+    <section class="grid grid-cols-2 max-md:grid-cols-none">
 
         <div>
-            <img src="./images/registorBG/bg.png"/>
+            <img src="./images/registorBG/bg.png" class="h-full max-md:hidden"/>
 
         </div>
 
-        <div class="flex flex-col mx-auto pt-28 gap-8">
-            <h1 class="text-black text-3xl">Create your account</h1>
-            <p>Join our community of skincare enthusiasts.</p>
-            <form class="mt-8 flex flex-col gap-8">
+        <div class="container items-center flex flex-col  pt-28 gap-8">
+            <div>
+            <h1 class="text-black text-3xl max-cartXs:text-2xl">Create your account</h1>
+            <p class="max-sm:text-[10px]">Join our community of skincare enthusiasts.</p>
+            </div>
+            
+            <form class="mt-8 flex flex-col gap-8 items-center">
                 <div class="flex flex-col">
                 <label class="font-semibold text-[12px]" for="name">Full Name</label>
-                <input class="border border-borderColor bg-white w-80 py-2 px-3 rounded-2xl text-[12px] text-gray-400" id="name" placeholder="Evelyn Harper"/>
+                <input class="border border-borderColor bg-white w-80 max-cartXs:w-60 py-2 px-3 rounded-2xl text-[12px] text-gray-400" id="name" placeholder="Evelyn Harper"/>
                   </div>
 
                   <div class="flex flex-col">
                 <label class="font-semibold text-[12px]" for="email">Email Address</label>
-                <input class="border border-borderColor bg-white w-80 py-2 px-3 rounded-2xl text-[12px] text-gray-400" id="email" placeholder="name@example.com"/>
+                <input class="border border-borderColor max-cartXs:w-60 bg-white w-80 py-2 px-3 rounded-2xl text-[12px] text-gray-400" id="email" placeholder="name@example.com"/>
                   </div>
 
 
                   <div class="flex flex-col">
                 <label class="font-semibold text-[12px]" for="Password">Password</label>
-                <input class="border border-borderColor bg-white w-80 py-2 px-3 rounded-2xl text-[12px] text-gray-400" id="Password" placeholder="••••••••"/>
+                <input class="border border-borderColor max-cartXs:w-60 bg-white w-80 py-2 px-3 rounded-2xl text-[12px] text-gray-400" id="Password" placeholder="••••••••"/>
                   </div>
 
 <div class="flex flex-col">
                 <label class="font-semibold text-[12px]" for="Confirm Password">Confirm Password</label>
-                <input class="border border-borderColor bg-white w-80 py-2 px-3 rounded-2xl text-[12px] text-gray-400" id="Confirm Password" placeholder="••••••••"/>
+                <input class="border border-borderColor max-cartXs:w-60 bg-white w-80 py-2 px-3 rounded-2xl text-[12px] text-gray-400" id="Confirm Password" placeholder="••••••••"/>
                   </div>
                   <div>
                     <input type="checkbox" id="checkbox"/>
-            <label for="checkbox">I agree to the Terms of Service and Privacy Policy.</label>
+            <label for="checkbox" class="text-[12px] max-cartXs:text-[9px]">I agree to the Terms of Service and Privacy Policy.</label>
                 
                   </div>
             </form>
 
-            <button class="cursor-pointer hover:scale-105 hover:bg-borderColor transition-all duration-200 text-white bg-interbackground w-80 py-2 text-[13px] rounded-3xl text-center">Create Account</button>
+            <button class="max-cartXs:w-60 cursor-pointer hover:scale-105 hover:bg-borderColor transition-all duration-200 text-white bg-interbackground w-80 py-3 text-[13px] rounded-3xl text-center">Create Account</button>
+            <p class="text-[12px] max-xs:text-[9px]">-------------<span class="text-center">OR SIGN UP WITH</span>-------------</p>
             
+            <div class="flex  gap-12 max-cartXs:gap-8">
+                <button class="hover:bg-fuchsia-50 transition-all hover:scale-105 duration-200 w-32 max-cartXs:w-28 border cursor-pointer border-borderColor p-2 rounded-3xl">Google</button>
+                <button class="w-32 border hover:scale-105 hover:bg-fuchsia-50 transition-all max-cartXs:w-28 duration-200 border-borderColor cursor-pointer p-2 rounded-3xl">Apple</button>
+            </div>
 
+            <p class="text-[12px]">Already have an account? <a href="./login.html" class="text-interbackground">Login</a></p>
+        
         </div>
     </section>
     
